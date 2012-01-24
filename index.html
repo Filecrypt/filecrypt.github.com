@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Filecrypt</title>
+<link rel="stylesheet" href="reset.css" />
+<link rel="stylesheet" href="text.css" />
+<link rel="stylesheet" href="960_12_col.css" />
+</head>
+<body>
+
+	<div class="container_12">
+		<header class="grid_12">
+			<div id="logo">filecrypt</div>
+			<div id="slogan">Yet another simple, secure file host.</div>
+		</header>
+		<hr class="grid_12" />
+		
+		<section class="grid_10 push_1 coming_soon">
+			<p>We're working hard on bringing you a secure service.</p>
+			<p style="font-size:14px;padding-top:0">While you wait, why don't you go support <a id="crypto" href="https://www.crypto.is/">The Crypto Project</a>.</p>
+		</section>
+		<hr class="grid_10 push_1" />
+		<section class="grid_10 push_1" id="additional_context">
+			<p>The Crypto Project is an organization designed to assist and encourage anonymity and encryption research, development, and use.</p>
+		</section>
+	
+	</div>
+	<footer>Stay safe out there.</footer>
+	
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('a#crypto').hover(function() {
+    	$('section#additional_context').not(':animated').slideDown();
+    }, function() {
+    	$('section#additional_context').slideUp();
+    });
+  });
+</script>
+</body>
+</html>

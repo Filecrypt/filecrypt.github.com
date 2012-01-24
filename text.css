@@ -1,0 +1,181 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('http://themes.googleusercontent.com/static/fonts/roboto/v2/RxZJdnzeo3R5zSexge8UUbO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url('http://themes.googleusercontent.com/static/fonts/roboto/v2/OLffGBTaF0XFOW1gnuHF0brIa-7acMAeDBVuclsi6Gc.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url('http://themes.googleusercontent.com/static/fonts/roboto/v2/vzIUHo9z-oJ4WgkpPOtg13YhjbSpvc47ee6xR_80Hnw.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url('http://themes.googleusercontent.com/static/fonts/roboto/v2/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url('http://themes.googleusercontent.com/static/fonts/roboto/v2/1pO9eUAp8pSF8VnRTP3xnnYhjbSpvc47ee6xR_80Hnw.woff') format('woff');
+}
+@font-face {
+  font-family: 'Orator Std';
+  src: local('Orator Std'), local('Orator-Std'), url('logo.woff') format('woff');
+}
+
+pre,
+code {
+  font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+}
+
+body {
+  font: 14px/22px Roboto, Helvetica, Arial, sans-serif;
+  background: #eee;
+  color: #333;
+}
+
+pre,
+code {
+  font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+}
+
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+/* `Remaining Styling
+----------------------------------------------------------------------------------------------------*/
+
+.coming_soon {
+	background: #fefefe;
+	border-top: 1px solid #dbdbdb;
+	margin-top: 150px;
+}
+.coming_soon p {
+	padding: 17px 20px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#additional_context {
+	background: #333;
+	font-size: 13px;
+	color: #fff;
+	display: none;
+}
+#additional_context p { padding: 7px 0 7px 10px; }
+
+header {
+	margin-top: 30px;
+	background: #757575;
+	height: 50px;
+	position: relative;
+}
+header div#logo {
+	font-family: 'Orator Std', 'Courier New';
+	background: #333;
+	color: #fff;
+	width: 195px;
+	height: 50px;
+	line-height: 55px;
+	padding-left: 10px;
+	font-size: 34px;
+}
+header div#slogan {
+	font-size: 14px;
+	position: absolute;
+	bottom: 0;
+	right:4px;
+	color: #eee;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background: #b1b1b1;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+footer {
+	position:absolute;
+	bottom: 60px;
+	font-size: 18px;
+	color: #b5b5b5;
+	text-align: center;
+	width: 100%;
+	z-index: -1;
+}
+
+.coming_soon a:link, .coming_soon a:visited { color: #007eff; text-decoration: underline; }
+.coming_soon a:hover { cursor:pointer; color: #999; text-decoration: none; }
+.coming_soon a:active { color: #007eff; text-decoration: underline; }
+
+a:link, a:visited { color: #eee; text-decoration: none; }
+a:hover { cursor:pointer; color: #fff; text-decoration: underline; }
+a:active { color: #eee; text-decoration: underline; }
