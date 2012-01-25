@@ -115,6 +115,7 @@ li {
 	background: #fefefe;
 	border-top: 1px solid #dbdbdb;
 	margin-top: 150px;
+	z-index: 1;
 }
 .coming_soon p {
 	padding: 17px 20px;
@@ -169,12 +170,48 @@ footer {
 	color: #b5b5b5;
 	text-align: center;
 	width: 100%;
-	z-index: -1;
+	text-shadow: 0 1px 0 #fff;
+}
+footer div {
+	font-size: 12px;
+	text-decoration: underline;
+	color: #757575;
+	cursor:pointer;
+}
+footer div:hover {
+	text-decoration: none;
+	color: #b1b1b1;
+}
+
+#bottom_notice {
+	margin-top: 10px;
+	padding: 7px 0;
+	width:100%;
+	position: absolute;
+	bottom:0;
+	text-align:center;
+	z-index:2;
+	font-size: 14px;
+	background:#757575;
+	box-shadow: 0 1px 0 #fff;
+	text-shadow: none;
+	border-top: 1px solid #707070;
+	color: #fff;
+	display: none;
 }
 
 .coming_soon a:link, .coming_soon a:visited { color: #007eff; text-decoration: underline; }
 .coming_soon a:hover { cursor:pointer; color: #999; text-decoration: none; }
 .coming_soon a:active { color: #007eff; text-decoration: underline; }
+
+#bottom_notice a:link, #bottom_notice a:visited { color: #ccc; text-decoration: underline; }
+#bottom_notice a:hover { cursor:pointer; color: #eee; text-decoration: none; }
+#bottom_notice a:active { color: #fff; text-decoration: underline; }
+
+
+footer a:link, footer a:visited { color: #007eff; text-decoration: underline; }
+footer a:hover { cursor:pointer; color: #999; text-decoration: none; }
+footer a:active { color: #007eff; text-decoration: underline; }
 
 a:link, a:visited { color: #eee; text-decoration: none; }
 a:hover { cursor:pointer; color: #fff; text-decoration: underline; }

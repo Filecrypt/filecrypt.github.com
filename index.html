@@ -27,7 +27,13 @@
 		</section>
 	
 	</div>
-	<footer>Stay safe out there.</footer>
+	<footer>
+		Stay safe out there.
+		<div>Help keep Filecrypt online!</div>
+
+	</footer>
+	<div id="bottom_notice">Thanks for helping us cover our operational costs! We also accept <a href="https://www.wepay.com/donations/filecrypt-operating-costs">payment via WePay</a>.</div>
+	
 	
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
@@ -38,6 +44,20 @@
     }, function() {
     	$('section#additional_context').slideUp();
     });
+
+	var temp;
+	$('footer div').hover(function() {
+		temp = $(this).text();
+		$(this).text('1MfGdzxGtKiknefp5my3Lun325UnrqLd7c');
+	}, function() {
+		$(this).text(temp);
+	});
+
+    $('footer div').click(function() {
+    	$('#bottom_notice').slideDown('slow');
+    });
+
+
   });
 </script>
 </body>
