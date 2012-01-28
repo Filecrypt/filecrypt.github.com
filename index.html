@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="reset.css" />
 <link rel="stylesheet" href="text.css" />
 <link rel="stylesheet" href="960_12_col.css" />
-<link rel="shortcut icon" href="favicon.gif" />
+<link rel="shortcut icon" href="favicon.png" />
 </head>
 <body>
 
@@ -42,7 +42,7 @@
     $('a#crypto').hover(function() {
     	$('section#additional_context').not(':animated').slideDown();
     }, function() {
-    	$('section#additional_context').slideUp();
+    	$('section#additional_context').delay('500').slideUp();
     });
 
 	var temp;
@@ -53,8 +53,10 @@
 		$(this).text(temp);
 	});
 
-    $('footer div').click(function() {
+    $('footer div').hover(function() {
     	$('#bottom_notice').slideDown('slow');
+    }, function () {
+    	
     });
 
 
