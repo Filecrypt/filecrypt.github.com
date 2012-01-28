@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>404 - Filecrypt</title>
+<link rel="stylesheet" href="/reset.css" />
+<link rel="stylesheet" href="/text.css" />
+<link rel="stylesheet" href="/960_12_col.css" />
+<link rel="shortcut icon" href="favicon.png" />
+</head>
+<body>
+
+	<div class="container_12">
+		<header class="grid_12">
+			<div id="logo">filecrypt</div>
+			<div id="slogan">Yet another simple, secure file host.</div>
+		</header>
+		<hr class="grid_12" />
+		
+		<section class="grid_10 push_1 coming_soon">
+			<p>Error 404 - File not Found</p>
+			<p style="font-size:14px;padding-top:0">Well, you must've made a mistake (or we did) because the page you've accessed doesn't exist. <a href="https://www.filecrypt.ws/">Go back to home</a>.</p>
+		</section>
+		<hr class="grid_10 push_1" />
+	
+	</div>
+	<footer>
+		Stay safe out there.
+		<div>Help keep Filecrypt online!</div>
+
+	</footer>
+	<div id="bottom_notice">Thanks for helping us cover our operational costs! We also accept <a href="https://www.wepay.com/donations/filecrypt-operating-costs">payment via WePay</a>.</div>
+	
+	
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+
+	var temp;
+	$('footer div').hover(function() {
+		temp = $(this).text();
+		$(this).text('1MfGdzxGtKiknefp5my3Lun325UnrqLd7c');
+	}, function() {
+		$(this).text(temp);
+	});
+
+    $('footer div').hover(function() {
+    	$('#bottom_notice').slideDown('slow');
+    }, function () {
+    	
+    });
+
+
+  });
+</script>
+</body>
+</html>
